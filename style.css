@@ -1,0 +1,505 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: #080808; 
+    color: #fff; 
+}
+
+.header {
+    position: fixed; 
+    top: 0; width: 100%;
+    padding: 20px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #080808;
+    z-index: 100;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 40px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+
+.home {
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh; 
+    padding: 0 10%;
+    gap: 50px;
+}
+
+.home-content h1 span, .text-accent {
+    color: #b74b4b; 
+    
+}
+
+.home-content h1 {
+    font-size: 50px;
+}
+
+.home-content h3 {
+    font-size: 30px;
+    margin-top: 10px;
+}
+
+.home-content p {
+    font-size: 18px;
+    margin-top: 20px;
+    line-height: 1.6;
+}
+
+
+.btn {
+    display: inline-block;
+    padding: 10px 28px;
+    background: #b74b4b;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.home-img img {
+    width: 400px;
+    border-radius: 50%; 
+    box-shadow: 0 0 20px #b74b4b; 
+}
+
+
+.lang-menu {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.lang-btn {
+    background: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 5px 10px;
+    margin: 0 5px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.lang-btn:hover {
+    background: #00abf0; 
+    border-color: #00abf0;
+}
+
+html {
+    scroll-behavior: smooth; 
+}
+
+section {
+    padding: 100px 10%;
+}
+
+.social-icons {
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.social-icons a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #b74b4b;
+    border-radius: 50%;
+    font-size: 24px;
+    color: #b74b4b;
+    text-decoration: none;
+    margin-right: 10px;
+    transition: 0.3s;
+}
+
+.social-icons a:hover {
+    background: #b74b4b;
+    color: #080808;
+    box-shadow: 0 0 10px #b74b4b;
+}
+
+.heading {
+    text-align: center;
+    font-size: 45px;
+    margin-bottom: 50px;
+}
+
+.heading span {
+    color: #b74b4b;
+    text-shadow: 0 0 15px #b74b4b;
+}
+
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 0 10%;
+}
+
+.skill-box {
+    background: #1a1d24; 
+    border-radius: 12px;
+    padding: 25px;
+    display: flex; 
+    align-items: flex-start;
+    gap: 20px;
+    transition: 0.3s;
+}
+.skill-box:hover {
+    transform: translateY(-5px); 
+}
+
+.skill-icon {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #9b59b6; 
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    color: #9b59b6;
+    flex-shrink: 0;
+}
+
+.skill-tags {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.skill-tags span {
+    background: transparent;
+    border: 1px solid #444;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 14px;
+    color: #ccc;
+}
+
+.projects {
+    margin-top: 50px;
+}
+
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 coloane */
+    gap: 40px; /* Distanța dintre proiecte */
+    max-width: 1000px; /* Limitează lățimea ca să nu se întindă urât pe ecrane mari */
+    margin: 0 auto; /* Această comandă centrează perfect toată cutia pe mijlocul ecranului */
+    padding: 0 20px;
+}
+
+/* Designul individual al cardului de proiect */
+.project-card {
+    background: #1a1d24;
+    border-radius: 15px;
+    overflow: hidden; /* Taie marginile ascuțite ale pozei ca să respecte rotunjirea cardului */
+    transition: 0.3s;
+    text-align: center; /* Centrează textul din interior pentru citire ușoară */
+}
+
+.project-card:hover {
+    transform: scale(1.02); /* Se mărește subtil când treci cu mouse-ul */
+    box-shadow: 0 0 20px rgba(183, 75, 75, 0.4); /* Glow cu roșul tău */
+}
+
+/* Setările pentru imaginea proiectului */
+.project-img img {
+    width: 100%; /* Ocupă toată lățimea cardului */
+    height: 250px; /* Înălțime fixă pentru uniformitate */
+    object-fit: cover; /* Funcționează ca un "crop" inteligent ca poza să nu se deformeze */
+}
+
+/* Setările pentru textul din card */
+.project-content {
+    padding: 25px;
+}
+
+.project-content h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.project-content p {
+    font-size: 16px;
+    color: #ccc;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Iconița link */
+.project-content a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: #b74b4b;
+    color: #fff;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.education-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 40px; 
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.education-card {
+    background: #1a1d24;
+    border-radius: 15px;
+    overflow: hidden; /* Taie marginile ascuțite ale pozei ca să respecte rotunjirea cardului */
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+}
+
+.education-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 20px rgba(183, 75, 75, 0.4);
+}
+
+/* Limităm lățimea pozei pentru a lăsa loc textului */
+.education-img {
+    width: 300px; /* Alocăm 300px fix pentru partea din stânga */
+    flex-shrink: 0; /* Împiedică strivirea pozei dacă textul din dreapta este prea lung */
+}
+
+.education-img img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover; /* 'cover' arată mai bine decât 'contain' dacă vrei să umpli tot pătratul */
+}
+
+/* Designul cutiei de text */
+.education-content {
+    padding: 30px;
+    text-align: left; /* Textul se aliniază la stânga, lângă poză */
+}
+
+.education-content h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.education-content p {
+    font-size: 16px;
+    color: #ccc;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 20%;
+    border-top: 1px solid #333;
+}
+
+.contact-container h2 {
+    font-size: 28px;
+}
+
+.email-text {
+    font-size: 25px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.email-text:hover {
+    color:#fff;
+}
+
+.email-text a {
+    color: #b74b4b;
+    text-decoration: none;
+}
+
+.extracurricular-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px; 
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.extracurricular-content p {
+    font-size: 16px;
+    color: #ccc;
+    line-height: 1.6;
+
+}
+
+.extracurricular-card {
+    background: #1a1d24;
+    border-radius: 10px;
+    overflow: hidden; 
+    transition: 0.3s;
+    border-left: 5px solid #b74b4b; 
+    align-items: center;
+}
+
+.extracurricular-content {
+    padding: 30px 40px;
+}
+
+.extracurricular-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 20px rgba(183, 75, 75, 0.4);
+}
+
+.extracurricular-content h3 {
+    font-size: 24px;
+    margin-bottom: 12px;
+    line-height: 1.4;
+}
+
+.modal-overlay {
+    display: none; 
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.8); 
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-box {
+    background: #1a1d24;
+    padding: 40px;
+    border-radius: 15px;
+    border: 1px solid #b74b4b;
+    text-align: center;
+    position: relative;
+}
+
+.modal-box h3 {
+    font-size: 24px;
+    margin-bottom: 25px;
+}
+
+.modal-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.close-modal {
+    position: absolute;
+    top: 10px; right: 15px;
+    font-size: 30px;
+    color: #ccc;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.close-modal:hover {
+    color: #b74b4b;
+}
+
+
+@media (max-width: 768px) {
+
+    .header {
+        flex-direction: column;
+        padding: 15px 5%;
+    }
+
+    .navbar {
+        margin-top: 10px;
+        margin-left: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .home {
+        height: auto;
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+        padding-top: 200px;
+    }
+
+    .home-img img {
+        width: 350px;
+    }
+
+    .home-content h1 {
+        font-size: 35px;
+    }
+
+    .home-content h3 {
+        font-size: 20px;
+    }
+
+    .skills-container {
+        grid-template-columns: 1fr; 
+        padding: 0 5%;
+    }
+
+    .projects-container {
+        grid-template-columns: 1fr; 
+        padding: 0 5%;
+    }
+
+    .education-card {
+        flex-direction: column; 
+    }
+
+    .education-img {
+        width: 100%; 
+    }
+
+    .education-content {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .contact-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .modal-buttons {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+        width: 100%;
+    }
+
+    .modal-buttons .btn {
+        width: 100%;
+        box-sizing: border-box;
+    }
+}

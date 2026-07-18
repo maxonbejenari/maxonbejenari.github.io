@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio | Mechatronics</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <a href="#home" class="active" id="nav-about">About</a>
+            <a href="#skills" id="nav-skills">Skills</a>
+            <a href="#projects" id="nav-projects">Projects</a>
+            <a href="#education" id="nav-education">Education</a>
+            <a href="#contact" id="nav-contact">Contact</a>
+            <a href="#extracurricular" id="nav-extracurricular">Extracurricular Activities</a>
+
+            
+            <div class="lang-menu">
+                <button onclick="changeLanguage('en')" class="lang-btn active-lang">EN</button>
+                <button onclick="changeLanguage('ro')" class="lang-btn">RO</button>
+                <button onclick="changeLanguage('ru')" class="lang-btn">RU</button>
+                <button onclick="changeLanguage('de')" class="lang-btn">DE</button>
+            </div>
+        </nav>
+    </header>
+
+    <section class="home" id="home">
+        <div class="home-img">
+            <img src="images/photo.jpg" alt="My Photo">
+        </div>
+
+        <div class="home-content">
+            <h1 id="title-hello">Hi, I'm <span>Maxim</span></h1>
+            <h3><span id="title-role"><span class="text-accent">Mechatronics Engineer</span></span></h3>
+            <p id="desc-text">Motivated Mechatronics Engineer skilled in combining mechanical design, electronics,
+                 and software. Good at solving problems, with hands-on experience in CAD, circuits, and programming.
+                  A dedicated team player ready to improve processes and build new automated systems.</p>
+            
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/bejenari-maxim-8b2746268/" target="_blank"><i class='bx bxl-linkedin'></i></a>
+                <a href="https://github.com/maxonbejenari" target="_blank"><i class='bx bxl-github'></i></a>
+            </div>
+            
+            <div class="btn-box">
+                <a href="cv.pdf" download class="btn" id="btn-cv" onclick="openCvModal(event)">Download resume</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="skills" id="skills">
+        <h2 class="heading" id="skills-heading">Skills & <span>Expertise</span></h2>
+
+        <div class="skills-container">
+            
+            <div class="skill-box">
+                <div class="skill-icon">
+                    <i class='bx bx-code-alt'></i>
+                </div>
+                <div class="skill-info">
+                    <h3 id="skill-1-title">Programming</h3>
+                    <div class="skill-tags">
+                        <span>C++</span>
+                        <span>Python</span>
+                        <span>MATLAB</span>
+                        <span>Java</span>
+                        <span>Golang</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill-box">
+                <div class="skill-icon" style="color: #00abf0; border-color: #00abf0;">
+                    <i class='bx bx-cube'></i>
+                </div>
+                <div class="skill-info">
+                    <h3 id="skill-2-title">CAD & Modeling</h3>
+                    <div class="skill-tags">
+                        <span>SolidWorks</span>
+                        <span>Onshape</span>
+                        <span>Fusion 360</span>
+                        <span>FreeCAD</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill-box">
+                <div class="skill-icon" style="color: #00ff88; border-color: #00ff88;">
+                    <i class='bx bx-microchip'></i>
+                </div>
+                <div class="skill-info">
+                    <h3 id="skill-3-title">Hardware & Control</h3>
+                    <div class="skill-tags">
+                        <span>Arduino</span>
+                        <span>PLC</span>
+                        <span>Raspberry Pi</span>
+                        <span>ESP32</span>
+                        <span>STM32</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill-box">
+                <div class="skill-icon" style="color: #b74b4b; border-color: #b74b4b;">
+                    <i class='bx bx-wrench'></i>
+                </div>
+                <div class="skill-info">
+                    <h3 id="skill-4-title">Tools & Frameworks</h3>
+                    <div class="skill-tags">
+                        <span>ROS2</span>
+                        <span>Git</span>
+                        <span>CodeSys</span>
+                        <span>OpenCV</span>
+                        <span>TensorFlow</span>
+                        <span>SLAM</span>
+                        <span>Fanuc</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="projects" id="projects">
+        <h2 class="heading" id="projects-heading">My <span>Projects</span></h2>
+
+        <div class="projects-container">
+
+            <div class="project-card">
+                <div class="project-img">
+                    <img src="images/project1.jpg" alt="Project 1">
+                </div>
+                <div class="project-content">
+                    <h3 id="proj-1-title">The Robot Vacuum Cleaner Simulation Protorype</h3>
+                    <p id="proj-1-desc">This project is a prototype autonomous vacuum cleaner robot developed entirely in simulation. The robot was
+                                designed in Onshape, converted to URDF using
+                                onshape-to-robot , simulated in Gazebo, and equipped with:
+                                SLAM Toolbox, NAV2, and YOLOv8 for autonomous navigation and object detection. The robot is capable of mapping an environment, planning a coverage path, and avoiding obstacles in real-time. </p>
+                    <a href="https://github.com/maxonbejenari/Robot_Vacuum_Cleaner_ROS2" target="_blank"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-img">
+                    <img src="images/project2.jpg" alt="Project 2">
+                </div>
+                <div class="project-content">
+                    <h3 id="proj-2-title">Strength Analysis of Pressure Vessels (Erasmus+ Project) | Istrian University of Applied Sciences</h3>
+                    <p id="proj-2-desc">Conducted strength analysis of pressure vessels for the Erasmus+ project at Istrian University of Applied Sciences, ensuring structural integrity and safety. Also, performed finite element analysis to optimize the design for various loading conditions.</p>
+                    <a href="https://drive.google.com/file/d/1-iSkkJDhbVIWjR8x-nVtzHDBpjaPaq-p/view?usp=sharing" target="_blank"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-img">
+                    <img src="images/project3.jpg" alt="Project 3">
+                </div>
+                <div class="project-content">
+                    <h3 id="proj-3-title">ROS2-Servo-Control</h3>
+                    <p id="proj-3-desc">A modern C++ ROS 2 (Jazzy) hardware bridge that translates simulated URDF joint commands into physical micro-servo movements via a CH340 serial connection. </p>
+                    <a href="https://github.com/maxonbejenari/ros2_servo_control" target="_blank"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-img">
+                    <img src="images/project4.jpg" alt="Project 4">
+                </div>
+                <div class="project-content">
+                    <h3 id="proj-4-title">Automated Industrial Tank Control System</h3>
+                    <p id="proj-4-desc">Developed and simulated a PLC program using Ladder Logic (LD) in CodeSys to automate the liquid level control of an industrial tank. The system processes continuous feedback from three physical state sensors to maintain optimal fluid levels. To maximize equipment lifespan and reliability, was designed an alternating control logic for a dual-pump setup, ensuring even mechanical wear and tear.</p>
+                    <a href="https://github.com/maxonbejenari/Automated-Industrial-Tank-Control-System" target="_blank"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="education" id="education">
+    <h2 class="heading" id="education-heading">Education</h2>
+    
+        <div class="education-container">
+
+            <div class="education-card">
+                <div class="education-img">
+                    <img src="images/education1.png" alt="High School">
+                </div>
+                <div class="education-content">
+                    <h3 id="edu-1-title">High School Diploma</h3>
+                    <p id="edu-1-desc">Theoretical Lyceum 'Lucian Blaga', Balti, Moldova | 2021 - 2024</p>
+                </div>
+            </div>
+            
+            <div class="education-card">
+                <div class="education-img">
+                    <img src="images/education2.png" alt="University">
+                </div>
+                <div class="education-content">
+                    <h3 id="edu-2-title">Bachelor's Degree in Mechatronics Engineering</h3>
+                    <p id="edu-2-desc">University of Bacau, Romania | 2024 - 2028</p>
+                </div>
+            </div>
+
+            <div class="education-card">
+                <div class="education-img">
+                    <img src="images/education3.png" alt="Erasmus"> 
+                </div>
+                <div class="education-content">
+                    <h3 id="edu-3-title">Erasmus+ Exchange Program</h3>
+                    <p id="edu-3-desc">Istrian University of Applied Sciences, Croatia | March 2026 - July 2026</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="extracurricular" id="extracurricular">
+        <h2 class="heading" id="extracurricular-heading">Extracurricular <span>Activities</span></h2>
+        
+        <div class="extracurricular-container">
+
+            <div class="extracurricular-card">
+                <div class="extracurricular-content">
+                    <h3 id="extra-1-title">Tekwill National Contest Finalist | Mobile Application Development Olympiad</h3>
+                    <p id="extra-1-desc">Designed and programmed a functional mobile app for teachers, enhancing their ability to manage their timetable.</p>
+                </div>
+            </div>
+
+            <div class="extracurricular-card">
+                <div class="extracurricular-content">
+                    <h3 id="extra-2-title">Tekwill National Contest Finalist | Programming Algorithms in C++</h3>
+                    <p id="extra-2-desc">Participated in the Tekwill National Contest, demonstrating proficiency in programming algorithms using C++.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    
+    <section class="contact" id="contact">
+        <div class="contact-container">
+            <h2 id="contact-msg">Please feel free to reach me out!</h2>
+            
+            <p class="email-text">
+                <span id="contact-email-label">Email:</span> 
+                <a href="mailto:maxonbejenari@gmail.com">maxonbej@gmail.com</a>
+            </p>
+        </div>
+    </section>
+
+    <div id="cvModal" class="modal-overlay">
+    <div class="modal-box">
+        <span class="close-modal">&times;</span>
+        
+        <h3 id="modal-title">Select CV Language</h3>
+        
+        <div class="modal-buttons">
+            <a href="pdf/Maxim_CV_EN.pdf" download class="btn">English</a>
+            <a href="pdf/Maxim_CV_RO.pdf" download class="btn">Română</a>
+            <a href="pdf/Maxim_CV_RU.pdf" download class="btn">Русский</a>
+            <a href="pdf/Maxim_CV_DE.pdf" download class="btn">Deutsch</a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</div>
+
+</body>
+</html>
