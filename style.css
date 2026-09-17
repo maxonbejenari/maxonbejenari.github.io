@@ -566,4 +566,21 @@ section {
         width: 100%;
         box-sizing: border-box;
     }
+
+    .navbar a {
+        margin-left: 0; 
+    }
+
+    .experience-card {
+        flex-direction: column; 
+    }
+
+    .experience-img {
+        width: 100%; 
+    }
+
+    .experience-content {
+        padding: 20px;
+        text-align: center;
+    }
 }
