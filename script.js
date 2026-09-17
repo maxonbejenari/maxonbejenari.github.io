@@ -9,6 +9,12 @@ const translations = {
         "desc-text": "Motivated Mechatronics Engineer skilled in combining mechanical design, electronics, and software. Good at solving problems, with hands-on experience in CAD, circuits, and programming. A dedicated team player ready to improve processes and build new automated systems.",
         "btn-cv": "Download resume",
 
+        // Experience Section
+        "experience-heading": "Experience",
+        "exp-1-title": "Industrial Engineer Intern",
+        "exp-1-date": "Aperam Magnetic Components, Moldova, Balti | August 2026 - September 2026",
+        "exp-1-desc": "During my internship, I actively bridged the gap between theoretical knowledge and industrial application, focusing on mechanical design, software automation, and precision electronic testing. Conducted rigorous precision testing using RLC meters. Successfully diagnosed measurement anomalies by differentiating between physical component defects. Developed and implemented custom Python scripts to automate repetitive mechanical design tasks within CAD environments, significantly reducing design time and minimising the risk of human error.",
+
         // Skills Section
         "skills-heading": "Skills & <span>Expertise</span>",
         "skill-1-title": "Programming",
@@ -64,6 +70,13 @@ const translations = {
         "desc-text": "Inginer mecatronist motivat, capabil să îmbine mecanica, electronica și software-ul. Bun la rezolvarea problemelor, cu experiență practică în programe CAD, circuite și programare. Un coleg de echipă dedicat, pregătit să îmbunătățească procese și să construiască sisteme automatizate noi.",
         "btn-cv": "Descarcă CV",
 
+        // Experience Section
+        "experience-heading": "Experiență",
+        "exp-1-title": "Intern Inginer Industrial",
+        "exp-1-date": "Aperam Magnetic Components, Moldova, Bălți | August 2026 - Septembrie 2026",
+        "exp-1-desc": "În timpul stagiului, am acționat activ pentru a face legătura între cunoștințele teoretice și aplicarea industrială, concentrându-mă pe proiectarea mecanică, automatizarea software-ului și testarea electronică de precizie. Am efectuat teste riguroase de precizie folosind aparate RLC. Am diagnosticat cu succes anomaliile de măsurare prin diferențierea între defectele fizice ale componentelor. Am dezvoltat și implementat scripturi Python personalizate pentru a automatiza sarcinile repetitive de proiectare mecanică în mediile CAD, reducând semnificativ timpul de proiectare și minimizând riscul de eroare umană.",
+
+
         // Skills Section
         "skills-heading": "Abilități & <span>Expertiză</span>",
         "skill-1-title": "Programare",
@@ -116,6 +129,12 @@ const translations = {
         "title-role": "<span class='text-accent'>Инженер-мехатроник</span>",
         "desc-text": "Мотивированный инженер-мехатроник, умеющий объединять механику, электронику и программирование. Хорошо решаю проблемы, есть практический опыт работы с CAD, электросхемами и кодом. Надежный командный игрок, готовый улучшать рабочие процессы и создавать новые автоматизированные системы",
         "btn-cv": "Скачать резюме",
+
+        // Experience Section
+        "experience-heading": "Опыт работы",
+        "exp-1-title": "Стажер-инженер промышленного производства",
+        "exp-1-date": "Aperam Magnetic Components, Молдова, Бельцы | Август 2026 - Сентябрь 2026",
+        "exp-1-desc": "Во время стажировки я активно преодолевал разрыв между теоретическими знаниями и промышленным применением, сосредотачиваясь на механическом проектировании, автоматизации программного обеспечения и точном электронном тестировании. Проводил строгие точные испытания с использованием RLC-метров. Успешно диагностировал аномалии измерений, различая физические дефекты компонентов. Разработал и внедрил пользовательские скрипты на Python для автоматизации повторяющихся задач механического проектирования в средах CAD, значительно сокращая время проектирования и минимизируя риск человеческой ошибки.",
 
         // Skills Section
         "skills-heading": "Навыки и <span>Экспертиза</span>",
@@ -170,6 +189,12 @@ const translations = {
         "title-role": "<span class='text-accent'>Mechatronik-Ingenieur</span>",
         "desc-text": "Motivierter Mechatronik-Ingenieur, der mechanisches Design, Elektronik und Software kombiniert. Gut im Problemlösen, mit praktischer Erfahrung in CAD, Schaltungen und Programmierung. Ein engagierter Teamplayer, bereit, Prozesse zu verbessern und neue automatisierte Systeme zu entwickeln.",
         "btn-cv": "Entladen Lebenslauf",
+
+        // Experience Section
+        "experience-heading": "Berufserfahrung",
+        "exp-1-title": "Praktikant im Bereich Industrietechnik",
+        "exp-1-date": "Aperam Magnetic Components, Moldau, Balti | August 2026 - September 2026",
+        "exp-1-desc": "Während meines Praktikums habe ich aktiv die Lücke zwischen theoretischem Wissen und industrieller Anwendung überbrückt, mit Schwerpunkt auf mechanischem Design, Software-Automatisierung und präziser elektronischer Prüfung. Durchführung rigoroser Präzisionstests mit RLC-Messgeräten. Erfolgreiche Diagnose von Messanomalien durch Unterscheidung zwischen physischen Bauteildefekten. Entwicklung und Implementierung benutzerdefinierter Python-Skripte zur Automatisierung wiederkehrender mechanischer Designaufgaben in CAD-Umgebungen, wodurch die Designzeit erheblich reduziert und das Risiko menschlicher Fehler minimiert wurde.",
 
         // Skills Section
         "skills-heading": "Fähigkeiten & <span>Expertise</span>",

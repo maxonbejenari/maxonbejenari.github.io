@@ -425,6 +425,70 @@ section {
     color: #b74b4b;
 }
 
+.experience-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 40px; 
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.experience-card {
+    background: #1a1d24;
+    border-radius: 15px;
+    overflow: hidden; /* Taie marginile ascuțite ale pozei ca să respecte rotunjirea cardului */
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+}
+
+.experience-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 20px rgba(183, 75, 75, 0.4);
+}
+
+/* Limităm lățimea pozei pentru a lăsa loc textului */
+.experience-img {
+    width: 300px; /* Alocăm 300px fix pentru partea din stânga */
+    flex-shrink: 0; /* Împiedică strivirea pozei dacă textul din dreapta este prea lung */
+}
+
+.experience-img img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover; /* 'cover' arată mai bine decât 'contain' dacă vrei să umpli tot pătratul */
+}
+
+/* Designul cutiei de text */
+.experience-content {
+    padding: 30px;
+    text-align: left; /* Textul se aliniază la stânga, lângă poză */
+}
+
+.experience-content h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.experience-content p {
+    font-size: 16px;
+    color: #ccc;
+}
+
+.experience-content .exp-subtitle {
+    color: #ccc; 
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.experience-content .exp-details {
+    font-size: 14px;
+    color: #ccc;
+    line-height: 1.6; 
+}
+
 
 @media (max-width: 768px) {
 
